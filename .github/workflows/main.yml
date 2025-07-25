@@ -1,0 +1,16 @@
+name: first build
+
+on:
+  push:
+    branches:
+    - master
+  workflow_dispatch:
+
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: printing hello world
+    - run: echo hello world
+  
